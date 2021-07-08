@@ -1,0 +1,43 @@
+[Tue Jul 06 07:14:49.434662 2021] [wsgi:error] [pid 21584] [remote 192.168.0.120:54967] None
+[Tue Jul 06 07:15:05.939332 2021] [wsgi:error] [pid 21584] [remote 192.168.0.120:54976] None
+[Tue Jul 06 07:17:16.070273 2021] [wsgi:error] [pid 21652] [remote 192.168.0.120:55044] None
+[Tue Jul 06 07:17:46.401507 2021] [wsgi:error] [pid 21652] [remote 192.168.0.120:55062] None
+[Tue Jul 06 07:17:51.453408 2021] [wsgi:error] [pid 21652] [remote 192.168.0.120:55065] None
+[Tue Jul 06 07:31:26.538623 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549] [2021-07-06 07:31:26,535] ERROR in app: Exception on /medico/get_doctors [GET]
+[Tue Jul 06 07:31:26.538685 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549] Traceback (most recent call last):
+[Tue Jul 06 07:31:26.538699 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549]   File "/home/crazydani/.local/lib/python3.6/site-packages/flask/app.py", line 2070, in wsgi_app
+[Tue Jul 06 07:31:26.538714 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549]     response = self.full_dispatch_request()
+[Tue Jul 06 07:31:26.538727 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549]   File "/home/crazydani/.local/lib/python3.6/site-packages/flask/app.py", line 1515, in full_dispatch_request
+[Tue Jul 06 07:31:26.538741 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549]     rv = self.handle_user_exception(e)
+[Tue Jul 06 07:31:26.538754 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549]   File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 165, in wrapped_function
+[Tue Jul 06 07:31:26.538768 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Tue Jul 06 07:31:26.538781 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549]   File "/home/crazydani/.local/lib/python3.6/site-packages/flask/app.py", line 1513, in full_dispatch_request
+[Tue Jul 06 07:31:26.538795 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549]     rv = self.dispatch_request()
+[Tue Jul 06 07:31:26.538808 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549]   File "/home/crazydani/.local/lib/python3.6/site-packages/flask/app.py", line 1499, in dispatch_request
+[Tue Jul 06 07:31:26.538822 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Tue Jul 06 07:31:26.538835 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549]   File "/usr/local/lib/python3.6/dist-packages/flask_cors/decorator.py", line 128, in wrapped_function
+[Tue Jul 06 07:31:26.538849 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549]     resp = make_response(f(*args, **kwargs))
+[Tue Jul 06 07:31:26.538862 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549]   File "/var/www/html/flask_web_service/controllers/medico_blueprint.py", line 21, in decorated
+[Tue Jul 06 07:31:26.538876 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549]     token = reques.headers.get('Token')
+[Tue Jul 06 07:31:26.538891 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549] NameError: name 'reques' is not defined
+[Tue Jul 06 07:31:26.539004 2021] [wsgi:error] [pid 21800] [remote 192.168.0.120:60549] 
+[Tue Jul 06 17:35:17.424930 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030] [2021-07-06 17:35:17,030] ERROR in app: Exception on /cita/update_cita/7 [PUT]
+[Tue Jul 06 17:35:17.496419 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030] Traceback (most recent call last):
+[Tue Jul 06 17:35:17.496452 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030]   File "/home/crazydani/.local/lib/python3.6/site-packages/flask/app.py", line 2070, in wsgi_app
+[Tue Jul 06 17:35:17.496466 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030]     response = self.full_dispatch_request()
+[Tue Jul 06 17:35:17.496479 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030]   File "/home/crazydani/.local/lib/python3.6/site-packages/flask/app.py", line 1515, in full_dispatch_request
+[Tue Jul 06 17:35:17.496492 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030]     rv = self.handle_user_exception(e)
+[Tue Jul 06 17:35:17.496526 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030]   File "/usr/local/lib/python3.6/dist-packages/flask_cors/extension.py", line 165, in wrapped_function
+[Tue Jul 06 17:35:17.496541 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030]     return cors_after_request(app.make_response(f(*args, **kwargs)))
+[Tue Jul 06 17:35:17.496553 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030]   File "/home/crazydani/.local/lib/python3.6/site-packages/flask/app.py", line 1513, in full_dispatch_request
+[Tue Jul 06 17:35:17.496565 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030]     rv = self.dispatch_request()
+[Tue Jul 06 17:35:17.496576 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030]   File "/home/crazydani/.local/lib/python3.6/site-packages/flask/app.py", line 1499, in dispatch_request
+[Tue Jul 06 17:35:17.496588 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Tue Jul 06 17:35:17.496600 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030]   File "/usr/local/lib/python3.6/dist-packages/flask_cors/decorator.py", line 128, in wrapped_function
+[Tue Jul 06 17:35:17.496611 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030]     resp = make_response(f(*args, **kwargs))
+[Tue Jul 06 17:35:17.496623 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030]   File "/var/www/html/flask_web_service/controllers/cita_blueprint.py", line 29, in decorated
+[Tue Jul 06 17:35:17.496634 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030]     return f(*args, **kwargs)
+[Tue Jul 06 17:35:17.496645 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030]   File "/var/www/html/flask_web_service/controllers/cita_blueprint.py", line 62, in update_cita
+[Tue Jul 06 17:35:17.496657 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030]     request.json['doctor_id']
+[Tue Jul 06 17:35:17.496676 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030] KeyError: 'doctor_id'
+[Tue Jul 06 17:35:17.496840 2021] [wsgi:error] [pid 1268] [remote 192.168.0.10:38030] 
